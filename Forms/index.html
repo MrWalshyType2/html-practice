@@ -42,12 +42,14 @@
             button -> No defined behaviour/takes default behaviour
      -->
      <form action="" method="post">
+         <hr>
          <p>Please enter your name:</p>
          <input type="text" name="username">
-         <hr><br>
+         <br>
          <button type="submit" name="okbtn" value="OK">OK</button>
          <button type="reset" name="resetbtn" value="Reset">Reset</button>
          <button type="button">Click me</button>
+         <hr>
      </form>
 
      <!-- 
@@ -69,7 +71,22 @@ This is the default text...
             Radio btns  -> Allows for a single selection from a group
        -->
        <form action="" method="post">
-           
+           <hr>
+           <h2>Drink</h2>
+           <input type="radio" name="drinks" value="Tea"/>
+           <label for="Tea">Tea</label>
+           <input type="radio" name="drinks" value="Coffee"/>
+           <label for="Coffee">Coffee</label>
+           <input type="radio" name="drinks" value="HotChocolate"/>
+           <label for="HotChocolate">Hot Chocolate</label>
+           <br>
+           <input type="checkbox" name="milk" value="milk"/>
+           <label for="milk">Milk</label>
+           <input type="checkbox" name="sugar" value="sugar"/>
+           <label for="sugar">Sugar</label>
+           <br><br>
+           <input type="submit" name="submitbtn" value="order"/>
+           <hr>
        </form>
 </body>
 </html>
