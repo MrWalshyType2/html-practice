@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+    <!-- 
+        Lists are used to store & display information. There are three
+        types of list:
+            - Unordered     -> Bullet-pointed by default
+            - Ordered       -> Numbered by default
+            - Description   -> Bullet-pointed by default on item description
+
+        style="list-style-type: type;" -> CSS for changing a lists styling
+    -->
+    <ul style="list-style-type: square;">
+        <li>UL Item 1</li>
+        <li>UL Item 2</li>
+    </ul>
+
+    <!-- 
+        Nested lists are created by nesting a list within the scope of
+        another list.
+     -->
+     <ul>
+         <li>Bobs Burgers</li>
+         <li>Creepy Coffee</li>
+         <ul>
+             <li>Creepy skinny coffee</li>
+             <li>Creepy full fat coffee</li>
+         </ul>
+     </ul>
+
+    <!-- 
+        Ordererd lists can take a start attribute to indicate a starting
+        number for the list.
+
+        start   -> Attribute to designate the starting number of an ordered list
+        type    -> Indicate a different ordering style (such as capital letters)
+    -->
+     <ol start="3">
+         <li>Add teabag to cup.</li>
+         <li>Add sugar to cup.</li>
+         <li>Add hot water.</li>
+         <li>Add a splodge of milk.</li>
+         <li>Drink the cuppa :)</li>
+     </ol>
+
+     <ol type="A">
+        <li>Add teabag to cup.</li>
+        <li>Add sugar to cup.</li>
+        <li>Add hot water.</li>
+        <li>Add a splodge of milk.</li>
+        <li>Drink the cuppa :)</li>
+    </ol>
+
+    <!-- 
+        A description list allows describing individual list items.
+
+        <dl>    -> Defines a description list
+        <dt>    -> Defines the term name
+        <dd>    -> Used to describe the prior term
+     -->
+     <dl>
+         <dt>Coffee</dt>
+         <dd>A yummy hot drink...</dd>
+         <dt>Hot Chocolate</dt>
+         <dd>An even yummier hot drink...</dd>
+     </dl>
+</body>
+</html>
