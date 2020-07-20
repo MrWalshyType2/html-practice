@@ -88,5 +88,26 @@ This is the default text...
            <input type="submit" name="submitbtn" value="order"/>
            <hr>
        </form>
+
+       <!-- 
+           <select> and <option> can create a drop-down field with predefined
+            values.
+
+            size     -> Limits the amount of options displayed
+            multiple -> Allows multiple options to be selected
+            selected -> Apply to an <option> for default selection
+        -->
+        <form action="" method="post">
+            <h2>Car Selector</h2>
+            <select name="cars" id="CarSelector" size="5" multiple>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="toyota">Toyota</option>
+                <option value="mazda" selected>Mazda</option>
+            </select>
+        </form>
+
+        
 </body>
 </html>
