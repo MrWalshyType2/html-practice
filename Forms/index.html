@@ -32,5 +32,44 @@
         <p>Please enter your age:</p>
         <input type="number" name="age" value="21">
     </form>
+
+    <!-- 
+        Forms can also have buttons for interaction. There are three distinct
+        types of button:
+
+            submit -> For submitting data
+            reset  -> For reseting data
+            button -> No defined behaviour/takes default behaviour
+     -->
+     <form action="" method="post">
+         <p>Please enter your name:</p>
+         <input type="text" name="username">
+         <hr><br>
+         <button type="submit" name="okbtn" value="OK">OK</button>
+         <button type="reset" name="resetbtn" value="Reset">Reset</button>
+         <button type="button">Click me</button>
+     </form>
+
+     <!-- 
+         Multi-line Text Input can be done with the <textarea> tag, with
+         some useful attributes:
+            rows -> Num of visible lines in a text area (height)
+            cols -> Num of visible columns (width)
+      -->
+      <form action="" method="post">
+          <p>Please enter your comment below:</p>
+          <textarea name="comment" cols="40" rows="10">
+This is the default text...
+          </textarea>
+      </form>
+
+      <!-- 
+          HTML also allows for multiple-choice selection boxes:
+            Checkboxes  -> Allows multiple selections from a group
+            Radio btns  -> Allows for a single selection from a group
+       -->
+       <form action="" method="post">
+           
+       </form>
 </body>
 </html>
