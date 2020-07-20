@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="container">
+    <nav>
+      <img
+        class="logo"
+        src="https://f0.pngfuel.com/png/136/22/profile-icon-illustration-user-profile-computer-icons-girl-customer-avatar-png-clip-art.png"
+        alt="A logo of an avatar"
+      />
+      <ul class="navbar">
+        <a href="./index.html"><li class="nav-item">Home</li></a>
+        <a href="./about.html"><li class="nav-item">About</li></a>
+        <a href="./signup.html"><li class="nav-item">Sign-up</li></a>
+      </ul>
+    </nav>
+    <header>
+      <h1>Sign Up!</h1>
+    </header>
+    <main>
+      <form action="./index.html" method="post">
+        <fieldset>
+          <legend>User Details</legend>
+          <div class="input-group">
+            <label for="forename">Forename</label>
+            <input type="text" id="forename" />
+          </div>
+          <div class="input-group">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+          </div>
+          <div class="input-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" />
+          </div>
+          <div class="input-group">
+            <label for="mobileno">Mobile no.</label>
+            <input type="number" id="mobileno" />
+          </div>
+          <div class="input-group">
+            <label for="bio">Biography</label><br />
+            <textarea name="bio" id="bio" cols="30" rows="10">
+            Describe yourself...
+            </textarea>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
