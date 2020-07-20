@@ -129,5 +129,34 @@ This is the default text...
         <option value="Safari" />
       </datalist>
     </form>
+
+    <!-- 
+        Other useful input types include:
+            - email     -> Parses for an email
+            - url       -> Parses for a url
+            - number    -> Only numerical input
+            - range     -> Uses a slider to select a number
+            - date      -> Uses a calendar to allow date selection
+            - search    -> No more than one, requires naming
+            - color     -> Select a colour from a predefined list or specify rgb/hsl
+
+        Other useful attributes include:
+            - pattern   -> Implements REGEX for field input validation
+                Can be used with:
+                        -> text, search, url, tel, email, password
+            - required  -> Makes the field mandatory
+            - autofocus -> Auto moves cursor to focus on a particular field
+     -->
+
+    <!-- A <fieldset> groups related form elements together -->
+    <fieldset>
+      <legend>User Details</legend>
+      <label for="fname">First name</label>
+      <input id="fname" type="text" />
+      <label for="sname">First name</label>
+      <input id="sname" type="text" />
+      <label for="age">Age</label>
+      <input id="age" type="number" />
+    </fieldset>
   </body>
 </html>
