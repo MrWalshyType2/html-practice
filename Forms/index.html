@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- 
+        Forms collect user input; 
+        this can be sent to another page or server for processing. 
+
+        The <form> tag creates a form. The action and method are specified
+        in the form tag.
+
+        action -> URL to open/action to execute on form submission.
+        method -> How the information is passed to ther server:
+            - GET  -> Appends args to the action URL, opens as if an anchor
+            - POST -> Posts the information to the URL pointed at
+    -->
+    <form action="" method="post"></form>
+
+    <!-- 
+        Forms can also take text input.
+        
+        placeholder -> attribute assigns temporary text to the input field.
+        value       -> Assigns default information to a field
+    -->
+    <form action="" method="post">
+        <p>Please enter your name:</p>
+        <input type="text" name="username" placeholder="Enter username">
+        <p>Please enter your age:</p>
+        <input type="number" name="age" value="21">
+    </form>
+</body>
+</html>
