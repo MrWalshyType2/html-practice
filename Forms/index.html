@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 
         Forms collect user input; 
         this can be sent to another page or server for processing. 
@@ -27,10 +27,10 @@
         value       -> Assigns default information to a field
     -->
     <form action="" method="post">
-        <p>Please enter your name:</p>
-        <input type="text" name="username" placeholder="Enter username">
-        <p>Please enter your age:</p>
-        <input type="number" name="age" value="21">
+      <p>Please enter your name:</p>
+      <input type="text" name="username" placeholder="Enter username" />
+      <p>Please enter your age:</p>
+      <input type="number" name="age" value="21" />
     </form>
 
     <!-- 
@@ -41,55 +41,56 @@
             reset  -> For reseting data
             button -> No defined behaviour/takes default behaviour
      -->
-     <form action="" method="post">
-         <hr>
-         <p>Please enter your name:</p>
-         <input type="text" name="username">
-         <br>
-         <button type="submit" name="okbtn" value="OK">OK</button>
-         <button type="reset" name="resetbtn" value="Reset">Reset</button>
-         <button type="button">Click me</button>
-         <hr>
-     </form>
+    <form action="" method="post">
+      <hr />
+      <p>Please enter your name:</p>
+      <input type="text" name="username" />
+      <br />
+      <button type="submit" name="okbtn" value="OK">OK</button>
+      <button type="reset" name="resetbtn" value="Reset">Reset</button>
+      <button type="button">Click me</button>
+      <hr />
+    </form>
 
-     <!-- 
+    <!-- 
          Multi-line Text Input can be done with the <textarea> tag, with
          some useful attributes:
             rows -> Num of visible lines in a text area (height)
             cols -> Num of visible columns (width)
       -->
-      <form action="" method="post">
-          <p>Please enter your comment below:</p>
-          <textarea name="comment" cols="40" rows="10">
+    <form action="" method="post">
+      <p>Please enter your comment below:</p>
+      <textarea name="comment" cols="40" rows="10">
 This is the default text...
-          </textarea>
-      </form>
+          </textarea
+      >
+    </form>
 
-      <!-- 
+    <!-- 
           HTML also allows for multiple-choice selection boxes:
             Checkboxes  -> Allows multiple selections from a group
             Radio btns  -> Allows for a single selection from a group
        -->
-       <form action="" method="post">
-           <hr>
-           <h2>Drink</h2>
-           <input type="radio" name="drinks" value="Tea"/>
-           <label for="Tea">Tea</label>
-           <input type="radio" name="drinks" value="Coffee"/>
-           <label for="Coffee">Coffee</label>
-           <input type="radio" name="drinks" value="HotChocolate"/>
-           <label for="HotChocolate">Hot Chocolate</label>
-           <br>
-           <input type="checkbox" name="milk" value="milk"/>
-           <label for="milk">Milk</label>
-           <input type="checkbox" name="sugar" value="sugar"/>
-           <label for="sugar">Sugar</label>
-           <br><br>
-           <input type="submit" name="submitbtn" value="order"/>
-           <hr>
-       </form>
+    <form action="" method="post">
+      <hr />
+      <h2>Drink</h2>
+      <input type="radio" name="drinks" value="Tea" />
+      <label for="Tea">Tea</label>
+      <input type="radio" name="drinks" value="Coffee" />
+      <label for="Coffee">Coffee</label>
+      <input type="radio" name="drinks" value="HotChocolate" />
+      <label for="HotChocolate">Hot Chocolate</label>
+      <br />
+      <input type="checkbox" name="milk" value="milk" />
+      <label for="milk">Milk</label>
+      <input type="checkbox" name="sugar" value="sugar" />
+      <label for="sugar">Sugar</label>
+      <br /><br />
+      <input type="submit" name="submitbtn" value="order" />
+      <hr />
+    </form>
 
-       <!-- 
+    <!-- 
            <select> and <option> can create a drop-down field with predefined
             values.
 
@@ -97,17 +98,36 @@ This is the default text...
             multiple -> Allows multiple options to be selected
             selected -> Apply to an <option> for default selection
         -->
-        <form action="" method="post">
-            <h2>Car Selector</h2>
-            <select name="cars" id="CarSelector" size="5" multiple>
-                <option value="audi">Audi</option>
-                <option value="bmw">BMW</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="toyota">Toyota</option>
-                <option value="mazda" selected>Mazda</option>
-            </select>
-        </form>
+    <form action="" method="post">
+      <hr />
+      <h2>Car Selector</h2>
+      <select name="cars" id="CarSelector" size="5" multiple>
+        <option value="audi">Audi</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="toyota">Toyota</option>
+        <option value="mazda" selected>Mazda</option>
+      </select>
+      <hr />
+    </form>
 
-        
-</body>
+    <!-- 
+            A <datalist> is similar to a <select> tag, except the option
+            can be typed rather than selected.
+
+            Autocompletion is buggy!
+         -->
+    <form action="" method="post">
+      <hr />
+      <h2>Browser Datalist</h2>
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Internet Explorer" />
+        <option value="Firefox" />
+        <option value="Google Chrome" />
+        <option value="Opera" />
+        <option value="Safari" />
+      </datalist>
+    </form>
+  </body>
 </html>
