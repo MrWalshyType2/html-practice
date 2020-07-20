@@ -6,11 +6,16 @@
     <title>Tables</title>
 
     <style>
-      iframe {
-        display: block;
-        margin: 3em auto;
-        width: 80%;
-        min-height: 400px;
+      #table {
+        /* display: block;
+        margin: 3em auto; */
+        width: 100%;
+        /* min-height: 400px; */
+        border: 8px dashed black;
+      }
+
+      tr, td {
+        border: 2px solid black;
       }
     </style>
   </head>
@@ -24,7 +29,7 @@
       <h1>Training Courses</h1>
     </header>
 
-    <table>
+    <table id="table">
       <thead>
         <caption>
           This is an example table...
