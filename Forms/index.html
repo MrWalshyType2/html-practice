@@ -32,5 +32,22 @@
         <p>Please enter your age:</p>
         <input type="number" name="age" value="21">
     </form>
+
+    <!-- 
+        Forms can also have buttons for interaction. There are three distinct
+        types of button:
+
+            submit -> For submitting data
+            reset  -> For reseting data
+            button -> No defined behaviour/takes default behaviour
+     -->
+     <form action="" method="post">
+         <p>Please enter your name:</p>
+         <input type="text" name="username">
+         <hr><br>
+         <button type="submit" name="okbtn" value="OK">OK</button>
+         <button type="reset" name="resetbtn" value="Reset">Reset</button>
+         <button type="button">Click me</button>
+     </form>
 </body>
 </html>
