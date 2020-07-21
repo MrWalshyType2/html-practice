@@ -50,6 +50,7 @@ console.log(age); // null
 age = 21;
 console.log(`My age is ${age}`);
 
+// Hoisting
 var foo = 1;
 function bar() {
     if (!foo) {
@@ -68,3 +69,19 @@ function b() {
 
 b();
 alert(a);
+
+// Loops
+for (let a = 100; a <= 200; a++) {
+    console.log(a);
+}
+
+function oneToTenTimesTen() {
+    for (let i = 1; i <= 10; i++) {
+        console.log(`Iteration ${i}`);
+        for (let j = 1; i <= 10; i++) {
+            console.log(j);
+        }
+    }
+}
+
+oneToTenTimesTen();
