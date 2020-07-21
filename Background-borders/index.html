@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* not working */
+      .background {
+        background-image: url("https://i.imgur.com/6FkrESf.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+
+      .b-full {
+        border: solid 1px black;
+      }
+
+      .b-bottom-red {
+        border-bottom: solid 1px red;
+      }
+
+      .b-full-round-gray {
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+
+      .b-left-blue {
+        border-left: 5px solid royalblue;
+        background-color: lightblue;
+      }
+
+      .p-16 {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body class="background">
+    <p class="b-full p-16">I have borders on all sides.</p>
+    <p class="b-bottom-red p-16">I have a red bottom border.</p>
+    <p class="b-full-round-gray p-16">I have rounded borders.</p>
+    <p class="b-left-blue p-16">I have a blue left border.</p>
+  </body>
+</html>
