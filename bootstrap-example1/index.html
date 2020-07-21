@@ -11,8 +11,188 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
+    <style>
+      .wireframe {
+        border: 1px solid black;
+      }
+
+      .row-wireframe {
+        border: 1px solid black;
+        height: 400px;
+      }
+    </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container wireframe">
+      <div class="row justify-content-around row-wireframe">
+        <div class="col-sm-3 col-md-4 col-lg-4 wireframe">
+          <p>Row 1 Column 1</p>
+        </div>
+        <div class="col-sm-3 col-md-4 col-lg-4 wireframe">
+          <p>Row 1 Column 2</p>
+        </div>
+        <div class="col-sm-3 col-md-4 col-lg-4 wireframe">
+          <p>Row 1 Column 3</p>
+        </div>
+      </div>
+      <div class="row justify-content-between row-wireframe">
+        <div class="col-4 wireframe">
+          <p>Row 2 Column 1</p>
+        </div>
+        <div class="col-4 wireframe">
+          <p>Row 2 Column 2</p>
+        </div>
+      </div>
+    </div>
+
+    <form action="" class="container mt-3 p-0 needs-validation">
+      <div class="row w-25 justify-content-between">
+        <div class="form-group col-2">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="form-group col-2">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password" required />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-6">
+          <label for="signup"
+            >Do you want to be bombarded by meaningless emails?</label
+          >
+          <select name="signup" id="signup" class="form-control">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" id="remember-me" class="form-check-input" />
+        <label for="remember-me" class="form-check-label">Remember Me</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="container p-0 mt-3">
+      <button
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Show Modal
+      </button>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">First Modal</h2>
+              <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>This is the modals body.</p>
+            </div>
+            <div class="modal-footer">
+              <p>This is the modals footer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-0 mt-3 mb-3">
+      <div class="card-deck">
+        <div class="card">
+          <img
+            src="https://andygaudion93.files.wordpress.com/2010/08/shrek_4_donkey1a.jpg"
+            alt="An image of Donkey from Shrek"
+            class="img-fluid"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Shrek</h3>
+            <h5 class="card-subtitle">And Donkey...</h5>
+            <p>Are we there yet?</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://i.imgur.com/4uu9fbi.jpg"
+            class="img-fluid"
+            alt="Clifford"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Clifford</h3>
+            <h5 class="clard-subtitle">The big red doge</h5>
+            <p>
+              A giant dog breaks in to a brewery. What happens next will shock
+              you!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://i.imgur.com/OmulKtJ.jpg"
+            class="img-fluid"
+            alt="National Treasure"
+          />
+          <div class="card-body">
+            <h3 class="card-title">National Treasure</h3>
+            <h5 class="clard-subtitle">A National Treasure</h5>
+            <p>
+              A national treasure searches for a national treasure in a movie
+              called National Treasure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script
