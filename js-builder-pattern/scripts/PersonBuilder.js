@@ -16,7 +16,7 @@ class PersonBuilder {
     }
 
     setAge(age) {
-        this.age = age;
+        this.age = age || 0;
         return this;
     }
 
