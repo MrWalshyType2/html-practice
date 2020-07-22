@@ -30,4 +30,7 @@ import Student from './Student.js';
   console.log(p1.getType());
   console.log(t1.getType());
   console.log(s1.getType());
+  console.log(p1);
+  console.log(t1);
+  console.log(s1);
 })(window);
