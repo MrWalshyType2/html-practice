@@ -22,6 +22,7 @@
       setTimeout(() => {
         console.log("aF1");
         resolve("Done aF1");
+        // reject("Failed aF1");
       }, 3000);
     });
   }
@@ -48,8 +49,12 @@
     await asyncFunction1();
     await asyncFunction2();
     await asyncFunction3();
-    console.log("All Done!");
-  };
+    return "All Done!";
+  }
 
-  doThings();
+  doThings()
+    .then((result) => console.log(result))
+    .catch((error) => {
+      console.log(error);
+    });
 })(window);
